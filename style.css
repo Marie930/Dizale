@@ -1,4 +1,4 @@
-/* Général */
+/* Styles de base */
 * {
     margin: 0;
     padding: 0;
@@ -11,142 +11,64 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
-    background-color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-}
-
+/* Style pour la navigation */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    position: relative;
 }
 
 .logo img {
-    max-width: 100px;
+    max-width: 120px;
 }
 
+/* Style pour le bouton burger */
 .menu-toggle {
-    display: none;
+    display: flex;
     flex-direction: column;
     cursor: pointer;
 }
 
-.menu-toggle span {
+.menu-toggle .bar {
     background: #333;
     height: 3px;
-    margin: 5px 0;
     width: 25px;
-    display: block;
+    margin: 5px 0;
+    transition: all 0.3s ease;
 }
 
+/* Par défaut, les liens de navigation sont cachés */
 .nav-links {
     display: none;
     flex-direction: column;
+    list-style: none;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
     align-items: center;
 }
 
-.nav-links li {
-    list-style: none;
-    margin: 10px 0;
+/* Lorsque le menu est actif */
+.nav-links.active {
+    display: flex;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 18px;
+/* Animation pour le bouton burger actif */
+.menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.tagline h1 {
-    font-size: 20px;
-    padding: 10px;
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
 }
 
-/* Style pour la balise <main> */
-main {
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1200px;
-    background-color: #f9f9f9;
-}
-
-.projects-section, .expertise-section, .news-section, .about-section, .cinema-section {
-    padding: 20px 0;
-    text-align: center;
-}
-
-.project-grid, .expertise-grid, .news-grid, .team-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-.project-item img, .expertise-item img, .news-item img, .team-member img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
-/* Footer */
-footer {
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
-}
-
-footer .footer-info {
-    margin-bottom: 10px;
-}
-
-footer .social-links img {
-    width: 24px;
-    margin: 0 10px;
-}
-
-/* Responsive styles pour tablettes */
-@media (min-width: 768px) {
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .menu-toggle {
-        display: none;
-    }
-
-    .tagline h1 {
-        font-size: 28px;
-    }
-
-    .project-grid, .expertise-grid, .news-grid, .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .project-item img, .expertise-item img, .news-item img, .team-member img {
-        height: auto;
-    }
-}
-
-/* Responsive styles pour ordinateurs */
-@media (min-width: 1024px) {
-    nav {
-        padding: 0 40px;
-    }
-
-    .project-grid, .expertise-grid, .news-grid, .team-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .tagline h1 {
-        font-size: 32px;
-    }
-    
-    main {
-        padding: 40px;
-    }
+.menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
