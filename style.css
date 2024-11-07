@@ -834,20 +834,6 @@ footer {
 
 
 /*FOOTER ECRANS LARGES*/
-@media (min-width: 768px) {
-    .footer-info {
-        grid-template-columns: repeat(6, 1fr);
-        /* 6 colonnes égales */
-        grid-template-rows: 50% 50%;
-        /* 2 lignes égales */
-        grid-template-areas:
-            "icon1 text1 icon3 text3 icon5 text5"
-            /* Ligne 1 */
-            "icon2 text2 icon4 text4 icon6 text6";
-        /* Ligne 2 */
-    }
-}
-
 /* Mise en page pour les écrans plus larges (>=768px) */
 @media (min-width: 768px) {
     .footer-info {
@@ -865,11 +851,14 @@ footer {
         font-size: 25px;
 
     }
+
+    .footer-info p {
+        font-size: 12px;
+    }
 }
 
+/* Styles pour les laptops et ordinateurs de taille moyenne */
 @media (min-width: 1024px) {
-
-    /* Styles pour les laptops et ordinateurs de taille moyenne */
     .footer-info {
         grid-template-columns: 25px 120px 25px 120px 25px 120px 25px 120px 25px 120px 25px 120px;
         grid-template-rows: 50% 50%;
