@@ -668,6 +668,7 @@ footer {
 
 .footer-info a:nth-of-type(1) {
     grid-area: icon3;
+    font-weight: normal;
     /* Lien vers Facebook avec l'icône Facebook */
 }
 
