@@ -744,6 +744,25 @@ footer {
     /* Couleur au survol */
 }
 
+/*MENTIONS LEGALES*/
+
+h1.ml {
+    font-family: 'Shrikhand', sans-serif;
+    text-align: left;
+}
+
+h2.ml {
+    text-align: left;
+}
+
+h3.ml {
+    text-align: left;
+}
+
+p.ml {
+    padding-bottom: 50px;
+}
+
 /*@MEDIA QUERY SECTION PROJETS & SEVICES*/
 /* Media query pour les grands écrans (3 colonnes à partir de 768px) */
 @media (min-width: 768px) {
