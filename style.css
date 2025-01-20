@@ -27,20 +27,18 @@ h1 {
     font-size: 15px;
 }
 
-/* Appliquer la police Joste à des éléments spécifiques */
+/* Appliquer la police Jost à des éléments spécifiques */
 h1,
 h3 {
     font-family: 'Jost', sans-serif;
     font-weight: 700;
-    /* Utilisation du poids gras de la police */
     text-align: center;
 }
 
-/* Appliquer la police Joste à des éléments spécifiques */
+/* Appliquer la police Jost à des éléments spécifiques */
 h2 {
     font-family: 'Shrikhand', sans-serif;
     font-weight: 700;
-    /* Utilisation du poids gras de la police */
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -55,7 +53,6 @@ h3 {
 p {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
-    /* Utilisation du poids régulier de la police */
 }
 
 
@@ -644,7 +641,7 @@ footer {
 
 .footer-info {
     display: grid;
-    grid-template-columns: 25px 150px 25px 150px;
+    grid-template-columns: 25px 110px 25px 110px;
     grid-template-rows: 25% 25% 25%;
     grid-template-areas:
         "icon1 text1 icon3 text3"
@@ -652,7 +649,7 @@ footer {
         "icon2 text2 icon4 text4"
         /* Ligne 2 */
         "icon5 text5 icon6 text6";
-    /* Ligne 3 */
+        /* Ligne 3 */
     gap: 10px;
     justify-content: center;
     justify-items: start;
@@ -724,7 +721,6 @@ footer {
 /* Style des icônes et du texte */
 .footer-info i {
     font-size: 20px;
-    /* Taille des icônes */
     color: #333;
 }
 
@@ -763,8 +759,9 @@ p.ml {
     padding-bottom: 50px;
 }
 
+
 /*@MEDIA QUERY SECTION PROJETS & SEVICES*/
-/* Media query pour les grands écrans (3 colonnes à partir de 768px) */
+/* Media query pour les grands écrans */
 @media (min-width: 768px) {
 
     .project-grid,
@@ -772,11 +769,11 @@ p.ml {
     .news-content,
     .team-content {
         grid-template-columns: repeat(2, 1fr);
-        /* 3 colonnes pour les écrans de tablette et plus */
+        /* 2 colonnes pour les écrans de tablette et plus */
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
 
     .project-grid,
     .cinema-content,
@@ -798,10 +795,19 @@ p.ml {
     }
 
     .expertise-item img {
-        width: 400px;
-        height: 300px;
+        width: 250px;
+        height: 200px;
     }
 }
+
+@media (min-width: 1025px) {
+
+    .expertise-grid {
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 colonnes pour les écrans de tablette et plus */
+    }
+}
+
 
 @keyframes fadein {
     from {
@@ -847,12 +853,9 @@ p.ml {
     /* Ajuster la taille des images pour la version bureau */
     .team-item img {
         width: 150px;
-        /* Tu peux ajuster la taille ici selon tes préférences */
         height: 150px;
     }
 }
-
-/*LOGOS DOSSIERS RP*/
 
 
 /*FOOTER ECRANS LARGES*/
@@ -866,7 +869,7 @@ p.ml {
             "icon1 text1 icon3 text3 icon5 text5"
             /* Ligne 1 */
             "icon2 text2 icon4 text4 icon6 text6";
-        /* Ligne 2 */
+            /* Ligne 2 */
     }
 
     h1 {
@@ -882,7 +885,7 @@ p.ml {
 /* Styles pour les laptops et ordinateurs de taille moyenne */
 @media (min-width: 1024px) {
     .footer-info {
-        grid-template-columns: 25px 120px 25px 120px 25px 120px 25px 120px 25px 120px 25px 120px;
+        grid-template-columns: 20px 120px 20px 120px 20px 120px 20px 120px 20px 120px 20px 120px;
         grid-template-rows: 50% 50%;
         /* 2 lignes égales */
         grid-template-areas:
@@ -913,5 +916,28 @@ p.ml {
 
     .language-switch {
         grid-area: switch;
+    }
+}
+
+/*MEDIA LOGO*/
+
+@media (min-width: 768px) {
+    .logo img {
+        max-width: 80px;
+        /* Taille pour les tablettes */
+    }
+}
+
+@media (min-width: 1025px) {
+    .logo img {
+        max-width: 100px;
+        /* Taille pour les écrans de bureau */
+    }
+}
+
+@media (min-width: 1441px) {
+    .logo img {
+        max-width: 120px;
+        /* Taille pour les écrans très larges */
     }
 }
