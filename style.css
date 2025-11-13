@@ -940,3 +940,45 @@ p.ml {
         /* Taille pour les écrans très larges */
     }
 }
+
+/*Section Anaouder*/
+.anaouder-section {
+    text-align: center;                /* Centrer tout le contenu */
+    padding: 4rem 1rem;
+}
+
+.anaouder-content {
+    display: flex;
+    justify-content: center;           /* Centrer horizontalement */
+}
+
+.anaouder-item1 {
+    max-width: 600px;                  /* Largeur raisonnable pour joli rendu */
+}
+
+.anaouder-item1 img {
+    margin: 1rem auto;                 /* Centrage + espacement */
+    display: block;
+    height: auto;
+    max-width: 260px;                 
+}
+
+.anaouder-credit {
+    text-align: center;                /* Centrer le texte */
+    margin-top: 0.5rem;
+}
+
+/*section Téléchargements*/
+
+.kit-link {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none; 
+    color: inherit;        
+}
+
+.kit-link:hover h3,
+.kit-link:hover i {
+    opacity: 0.8; 
+}
