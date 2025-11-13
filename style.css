@@ -949,7 +949,9 @@ p.ml {
 
 .anaouder-content {
     display: flex;
-    justify-content: center;           /* Centrer horizontalement */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;           /* Centrer horizontalement */
 }
 
 .anaouder-item1 {
