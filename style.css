@@ -984,3 +984,8 @@ p.ml {
 .kit-link:hover i {
     opacity: 0.8; 
 }
+
+/*section Présentation Anaouder*/
+p.pres {
+    padding: 10px;
+}
