@@ -758,6 +758,77 @@ p.ml {
     padding-bottom: 50px;
 }
 
+/*Section Anaouder*/
+.anaouder-section {
+    text-align: center;
+    /* Centrer tout le contenu */
+    padding: 4rem 1rem;
+}
+
+.anaouder-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Centrer horizontalement */
+}
+
+.anaouder-item1 {
+    max-width: 600px;
+}
+
+.anaouder-item1 img {
+    margin: 1rem auto;
+    /* Centrage + espacement */
+    display: block;
+    height: auto;
+    max-width: 260px;
+}
+
+img#region-logo {
+    margin: 1rem auto;
+    /* Centrage + espacement */
+    display: block;
+    height: auto;
+    max-width: 260px;
+}
+
+.anaouder-credit {
+    text-align: center;
+    /* Centrer le texte */
+    margin-top: 0.5rem;
+}
+
+/*section Téléchargements*/
+
+.kit-link {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.kit-link:hover h3,
+.kit-link:hover i {
+    opacity: 0.8;
+}
+
+a.tuto-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img#screenshot {
+    width: 300px;
+}
+
+/*section Présentation Anaouder*/
+p.pres {
+    padding: 10px;
+}
 
 /*@MEDIA QUERY SECTION PROJETS & SEVICES*/
 /* Media query pour les grands écrans */
@@ -941,70 +1012,9 @@ p.ml {
     }
 }
 
-/*Section Anaouder*/
-.anaouder-section {
-    text-align: center;
-    /* Centrer tout le contenu */
-    padding: 4rem 1rem;
-}
 
-.anaouder-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* Centrer horizontalement */
-}
-
-.anaouder-item1 {
-    max-width: 600px;
-}
-
-.anaouder-item1 img {
-    margin: 1rem auto;
-    /* Centrage + espacement */
-    display: block;
-    height: auto;
-    max-width: 260px;
-}
-
-img#region-logo {
-    margin: 1rem auto;
-    /* Centrage + espacement */
-    display: block;
-    height: auto;
-    max-width: 260px;
-}
-
-.anaouder-credit {
-    text-align: center;
-    /* Centrer le texte */
-    margin-top: 0.5rem;
-}
-
-/*section Téléchargements*/
-
-.kit-link {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-}
-
-.kit-link:hover h3,
-.kit-link:hover i {
-    opacity: 0.8;
-}
-
-a.tuto-link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/*section Présentation Anaouder*/
-p.pres {
-    padding: 10px;
+@media screen and (min-width: 768px) {
+    img#screenshot {
+        width: 550px;
+    }
 }
