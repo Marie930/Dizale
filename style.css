@@ -785,6 +785,14 @@ p.ml {
     max-width: 260px;
 }
 
+.anaouder-item2 img {
+    margin: 1rem auto;
+    /* Centrage + espacement */
+    display: block;
+    height: auto;
+    max-width: 460px;
+}
+
 img#region-logo {
     margin: 1rem auto;
     /* Centrage + espacement */
